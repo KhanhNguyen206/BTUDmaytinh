@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ungdungmaytinh</title>
+</head>
+<body>
+<form>
+    Calculator
+    <input id="a" type="number"/>
+    <input id="b" type="number"/>
+    <br>
+    <br>
+    <button onclick="cong()">Addition(+)</button>
+    <button onclick="tru()">Subtraction(-)</button>
+    <button onclick="nhan()">Multiplication(x)</button>
+    <button onclick="chia()">Division(/)</button>
+</form>
+<script>
+
+    function cong(){
+        let a = parseInt(document.getElementById('a').value);
+        let b = parseInt(document.getElementById('b').value);
+        let tong = a + b;
+        alert("tổng 2 số là:" +tong);
+    }
+
+    function tru() {
+        let a = parseInt(document.getElementById('a').value);
+        let b = parseInt(document.getElementById('b').value);
+        let hieu = a-b;
+        alert("hiệu 2 số là:" +hieu);
+    }
+    function nhan() {
+        let a = parseInt(document.getElementById('a').value);
+        let b = parseInt(document.getElementById('b').value);
+        let tich =a*b;
+        alert("tích 2 số là:" +tich);
+    }
+    function chia(){
+        let a = parseInt(document.getElementById('a').value);
+        let b = parseInt(document.getElementById('b').value);
+        let thuong = a / b;
+        alert("thương 2 số là:" +thuong);
+    }
+</script>
+</body>
+</html>
