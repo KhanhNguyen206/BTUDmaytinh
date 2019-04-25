@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ungdungmaytinh</title>
+</head>
+<body>
+<form>
+
+    <input id="output" type="text"/>
+
+    <br>
+    <br>
+    <input type="button" value="1" onclick="getoutput(this.value)"></input>
+    <input type="button" value="2" onclick="getoutput(this.value)"></input>
+    <input type="button" value="3" onclick="getoutput(this.value)"></input>
+    <input type="button" value="+" onclick="getoutput(this.value)"></input>
+    <br>
+    <input type="button" value="4" onclick="getoutput(this.value)"></input>
+    <input type="button" value="5" onclick="getoutput(this.value)"></input>
+    <input type="button" value="6" onclick="getoutput(this.value)"></input>
+    <input type="button" value="-" onclick="getoutput(this.value)"></input>
+    <br>
+    <input type="button" value="7" onclick="getoutput(this.value)"></input>
+    <input type="button" value="8" onclick="getoutput(this.value)"></input>
+    <input type="button" value="9" onclick="getoutput(this.value)"></input>
+    <input type="button" value="*" onclick="getoutput(this.value)"></input>
+    <br>
+    <input type="button" value="=" onclick="bang()"></input>
+    <input type="button" value="0" onclick="getoutput(this.value)"></input>
+    <input type="button" value="." onclick="getoutput(this.value)"></input>
+    <input type="button" value="/" onclick="getoutput(this.value)"></input>
+</form>
+
+<script>
+
+    function getoutput(value){
+        document.getElementById("output").value += value;
+    }
+
+    function bang() {
+        document.getElementById("output").value=eval(document.getElementById("output").value);
+
+    }
+</script>
+</body>
+</html>
